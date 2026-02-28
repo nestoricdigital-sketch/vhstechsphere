@@ -115,11 +115,14 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
-              <Link to="/">
-                <h1 className="mt-4 text-[20px] hover:text-blue-300">
-                  website: www.vhstechsphere.com
-                </h1>
-              </Link>
+              <a
+                href="https://www.vhtechsphere.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-4 text-[20px] hover:text-blue-300 transition-colors duration-300"
+              >
+                Website: www.vhtechsphere.com
+              </a>
               <h1 className="mt-4 text-[20px]">CIN : U47411KA2025PTC212946</h1>
             </div>
           </div>

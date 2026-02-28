@@ -67,12 +67,11 @@ export default function Services() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="lucide lucide-server h-6 w-6 text-primary"
+          className="lucide lucide-user-check h-6 w-6 text-primary"
         >
-          <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
-          <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
-          <line x1="6" x2="6.01" y1="6" y2="6"></line>
-          <line x1="6" x2="6.01" y1="18" y2="18"></line>
+          <path d="M16 21v-2a4 4 0 0 0-8 0v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+          <polyline points="16 11 18 13 22 9"></polyline>
         </svg>
       ),
       title: "Manpower Resources",
