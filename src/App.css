@@ -1,5 +1,10 @@
 .App {
+  max-width: 1920px;
   text-align: center;
+   margin: auto auto;    /* centers it horizontally */
+  padding: 0rem;  
+   overflow-x: hidden; 
+
 }
 
 .App-logo {
@@ -35,4 +40,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+.small-text {
+  font-size: 20px;
+}
+.medium-text {
+  font-size: 24px;
 }
