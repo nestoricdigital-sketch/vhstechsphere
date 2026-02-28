@@ -67,35 +67,38 @@ export default function AdminDashboard() {
 
         {/* LIST SECTION */}
         <div className="w-full px-4 md:px-6 mt-4 mb-6 space-y-3">
-          {/* LABEL ROW – hidden on mobile */}
-          <div className="flex md:flex justify-between md:mx-4 mb-2 text-gray-400">
-            <p>message</p>
-            <p>date</p>
+          {/* LABEL ROW – only desktop */}
+          <div className="hidden md:flex justify-between md:mx-4 mb-2 text-gray-400 text-sm">
+            <p>Message</p>
+            <p>Date</p>
           </div>
 
           {data.map((f) => (
             <div
               key={f.id}
               onClick={() => setSelected(f)}
-              className="bg-white p-2 md:p-4 rounded-lg border cursor-pointer hover:shadow-md hover:scale-[1.01] transition-all"
+              className="bg-white p-4 rounded-lg border cursor-pointer 
+                 hover:shadow-md hover:scale-[1.01] 
+                 transition-all duration-300"
             >
-              {/* MESSAGE + TIME */}
-              <div className="flex justify-between items-start gap-4">
-                <p className="text-gray-900 font-medium items-start break-words">
-                  {f.message.length > 70
-                    ? f.message.slice(0, 70) + "..."
-                    : f.message}
-                </p>
+              {/* MOBILE + DESKTOP RESPONSIVE LAYOUT */}
+              <div className="flex flex-col text-start md:flex-row md:justify-between md:items-start gap-2 md:gap-4">
+                {/* MESSAGE */}
+                <div>
+                  <p>Name: {f.name ? f.name : ""}</p>
+                  <p className="text-gray-900 font-medium break-words text-sm md:text-base">
+                    Subject:{" "}
+                    {f.subject.length > 70
+                      ? f.subject.slice(0, 70) + "..."
+                      : f.subject}
+                  </p>
+                </div>
 
-                <span className="text-xs text-gray-500 whitespace-nowrap">
+                {/* DATE */}
+                <span className="text-xs md:text-sm text-gray-500 whitespace-nowrap text-right">
                   {new Date(f.created_at).toLocaleString()}
                 </span>
               </div>
-
-              {/* NAME + EMAIL */}
-              {/* <div className="text-sm text-gray-600 mt-2 break-words">
-                <span className="font-semibold">{f.name}</span> • {f.email}
-              </div> */}
             </div>
           ))}
         </div>
