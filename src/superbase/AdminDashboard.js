@@ -31,7 +31,7 @@ export default function AdminDashboard() {
       <div className="w-full md:w-[20%] bg-slate-300 flex flex-col justify-between p-4 shadow-lg">
         <div className="md:py-2">
           <h1 className="text-xl md:text-3xl text-blue-400 font-bold">
-            VH's TechSphere
+            VH'S TechSphere
           </h1>
 
           <button className="mt-6 w-full text-left font-semibold px-3 py-2 rounded bg-gray-100">
@@ -119,17 +119,21 @@ export default function AdminDashboard() {
               <div className="space-y-3 text-left">
                 <div>
                   <span className="font-semibold">Name:</span>
-                  <span className="ml-2">{selected.name}</span>
+                  <span className="ml-2">{selected.name || ""}</span>
                 </div>
 
                 <div>
                   <span className="font-semibold">Email:</span>
-                  <span className="ml-2">{selected.email}</span>
+                  <span className="ml-2">{selected.email || ""}</span>
                 </div>
 
                 <div>
                   <span className="font-semibold">Phone:</span>
                   <span className="ml-2">{selected.phone || "-"}</span>
+                </div>
+                <div>
+                  <span className="font-semibold">Service :</span>
+                  <span className="ml-2">{selected.service || "-"}</span>
                 </div>
 
                 <div>
@@ -141,7 +145,7 @@ export default function AdminDashboard() {
 
                 <div>
                   <span className="font-semibold">Message:</span>
-                  <span className="ml-2">{selected.message}</span>
+                  <span className="ml-2">{selected.message || ""}</span>
                 </div>
 
                 <div className="pt-2 text-sm text-gray-500">

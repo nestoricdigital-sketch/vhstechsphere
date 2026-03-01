@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { supabase } from "../../superbase/supabaseClient";
-const Form = ({ onClose, showClose }) => {
+const Form = ({ productTitle, p_Title, onClose, showClose }) => {
   const [status, setStatus] = useState("");
+  const [errors, setErrors] = useState({});
+  console.log("message er:", errors);
 
   const [form, setForm] = useState({
     name: "",
@@ -20,6 +22,38 @@ const Form = ({ onClose, showClose }) => {
       value = value.replace(/\D/g, ""); // remove non-digits
       if (value.length > 10) return; // restrict to 10 digits
     }
+    // Message Validation (Live)
+    if (name === "message") {
+      const trimmed = value.trim();
+
+      // Split words (letters only)
+      const words = trimmed.match(/\b[a-zA-Z]{3,}\b/g);
+
+      // Rule 1: Minimum 5 words
+      if (!words || words.length < 5) {
+        setErrors((prev) => ({
+          ...prev,
+          message: "Please enter at least 5 meaningful words.",
+        }));
+        setForm((prev) => ({ ...prev, [name]: value }));
+        return;
+      }
+
+      // Rule 2: Each word must contain at least one vowel
+      const meaningfulWords = words.filter((word) => /[aeiouAEIOU]/.test(word));
+
+      if (meaningfulWords.length < 5) {
+        setErrors((prev) => ({
+          ...prev,
+          message: "Please enter meaningful words (not random characters).",
+        }));
+      } else {
+        setErrors((prev) => ({
+          ...prev,
+          message: "",
+        }));
+      }
+    }
 
     setForm({ ...form, [name]: value });
   };
@@ -31,7 +65,9 @@ const Form = ({ onClose, showClose }) => {
     !form.phone ||
     form.phone.length !== 10 ||
     !form.subject ||
-    !form.message; // must be exactly 10 digits
+    !form.message ||
+    errors.message;
+  // must be exactly 10 digits
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +75,10 @@ const Form = ({ onClose, showClose }) => {
 
     const { name, email, phone, subject, message } = form;
 
-    console.log("name", name, email, phone, subject, message);
+    // console.log("name", name, email, phone, subject, message);
+
+    // console.log("serivce:", productTitle);
+    // console.log("product:", p_Title);
 
     const { error } = await supabase.from("vhs_form").insert({
       name,
@@ -47,7 +86,11 @@ const Form = ({ onClose, showClose }) => {
       phone,
       subject,
       message,
+      // service: p_Title ?? productTitle,
+      service: p_Title ?? productTitle ?? "",
     });
+    // service: p_Title ? p_Title : productTitle,
+    // const { error } = "";
 
     if (error) {
       console.log(error);
@@ -162,6 +205,9 @@ const Form = ({ onClose, showClose }) => {
               placeholder="Write your message..."
               className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
             ></textarea>
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
 
           {/* Submit Button */}

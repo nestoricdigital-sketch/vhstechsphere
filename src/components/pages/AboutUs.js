@@ -43,11 +43,10 @@ export default function AboutUs() {
           <p className="text-gray-700 small-text text-justify">
             Our core competency lies in crafting and designing customized
             business solutions tailored to the unique requirements of our
-            clients right from setting up IT infrastructure to application
-            development. The primary objective of our business is to streamline
-            IT operations by reducing duplication, maximizing ROI, ensuring
-            adherence to standards, and promoting adaptability and
-            interoperability.
+            clients setting up IT infrastructure. The primary objective of our
+            business is to streamline IT operations by reducing duplication,
+            maximizing ROI, ensuring adherence to standards, and promoting
+            adaptability and interoperability.
           </p>
         </div>
         <div className="md:w-1/2">

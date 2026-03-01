@@ -140,7 +140,7 @@ export default function Services() {
 
     hover:shadow-[0_6px_24px_rgba(56,189,248,0.6)] transition "
               onClick={() => {
-                setSelectedProduct(service);
+                setSelectedProduct(service.title);
                 setOpenModal(true);
               }}
             >

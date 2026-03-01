@@ -11,6 +11,7 @@ import {
   //  useLocation,
   useNavigate,
 } from "react-router-dom";
+import { useState } from "react";
 
 const featuredProducts = [
   {
@@ -64,6 +65,16 @@ const philosophy = [
 //
 export default function Home() {
   const navigate = useNavigate();
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const { innerWidth, innerHeight } = window;
+
+    const moveX = (e.clientX - innerWidth / 2) / 30;
+    const moveY = (e.clientY - innerHeight / 2) / 30;
+
+    setPosition({ x: moveX, y: moveY });
+  };
 
   const goToForm = () => {
     navigate("/contact");
@@ -81,19 +92,34 @@ export default function Home() {
       {/* Hero Section */}
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center py-24 px-4 text-center"
-        style={{ backgroundImage: `url(${banner})` }}
+        onMouseMove={handleMouseMove}
+        className="relative py-24 px-4 text-center overflow-hidden"
       >
+        {/* Moving Background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-200 ease-out"
+          style={{
+            backgroundImage: `url(${banner})`,
+            transform: `translate(${position.x}px, ${position.y}px) scale(1.1)`,
+          }}
+        ></div>
         <div className="absolute inset-0 bg-white bg-opacity-20 backdrop-blur-sm"></div>
 
-        <div className="relative z-10 w-full md:max-w-4xl text-center mx-auto text-white px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-3">
-            Dive into our <span className="text-blue-400">Revolutionary</span>
+        <div className="relative z-10 w-full md:max-w-5xl text-center mx-auto text-white px-4">
+          {/* Line 1 */}
+          <h1 className="text-4xl md:text-9xl font-extrabold leading-tight animate-slide-left">
+            Dive into our
           </h1>
 
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4">
-            technologies
-          </h2>
+          {/* Line 2 */}
+          <h1 className="text-4xl md:text-9xl font-extrabold text-blue-400 leading-tight animate-slide-right [animation-delay:0.3s]">
+            Revolutionary
+          </h1>
+
+          {/* Line 3 */}
+          <h1 className="text-4xl  md:text-9xl font-extrabold leading-tight mb-6 animate-slide-left [animation-delay:0.6s]">
+            Technologies
+          </h1>
 
           <p className="text-base sm:text-lg md:text-2xl mb-6 leading-relaxed">
             VH'S TECHSPHERE PRIVATE LIMITED empowers businesses with

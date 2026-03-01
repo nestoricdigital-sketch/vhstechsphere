@@ -14,10 +14,10 @@ export default function Navbar() {
         <Link to="/">
           <div className="flex   justify-center ">
             <p className="text-2xl mr-2  text-center content-center font-bold">
-              VH's
+              VH'S
             </p>
-            <p className="text-xl mt-1 text-center content-center  text-blue-400 ">
-              TechSphere
+            <p className=" text-xl  text-center content-center  text-blue-400 ">
+              TechSphere Private Limited
             </p>
           </div>
         </Link>

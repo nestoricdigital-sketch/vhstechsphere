@@ -50,33 +50,73 @@ export default function Products() {
       ),
 
       brands: [
+        // {
+        //   name: "Dell Laptops",
+        //   items: [
+        //     "Dell XPS Series - Premium ultrabooks with stunning displays",
+        //     "Dell Latitude - Business-grade durability and security",
+        //     "Dell Inspiron - Affordable performance for everyday use",
+        //     "Dell Precision - Mobile workstations for professionals",
+        //   ],
+        // },
+        // {
+        //   name: "HP Laptops",
+        //   items: [
+        //     "HP Spectre x360 - Premium convertible with style",
+        //     "HP EliteBook - Enterprise-class business laptops",
+        //     "HP ProBook - Reliable and affordable business solutions",
+        //     "HP ZBook - Mobile workstations for creative professionals",
+        //   ],
+        // },
+
+        // {
+        //   name: "Lenovo Laptops",
+        //   items: [
+        //     "Lenovo ThinkPad - Legendary business laptops with TrackPoint",
+        //     "Lenovo IdeaPad - Consumer laptops for home and office",
+        //     "Lenovo Yoga - Flexible 2-in-1 convertible devices",
+        //     "Lenovo Legion - High-performance gaming laptops",
+        //   ],
+        // },
         {
-          name: "Dell Laptops",
+          name: "Dell Commercial Laptops",
           items: [
-            "Dell XPS Series - Premium ultrabooks with stunning displays",
-            "Dell Latitude - Business-grade durability and security",
-            "Dell Inspiron - Affordable performance for everyday use",
-            "Dell Precision - Mobile workstations for professionals",
+            "Dell Latitude 3000 Series - Essential business laptops for everyday productivity",
+            "Dell Latitude 5000 Series - Mainstream business laptops with enhanced features",
+            "Dell Latitude 7000 Series - Premium ultralight business laptops",
+            "Dell Latitude 9000 Series - Ultra-premium flagship for executives",
+            "Dell Latitude Rugged - Military-grade durability for extreme environments",
+            "Dell Precision 3000 Series - Entry-level mobile workstations",
+            "Dell Precision 5000 Series - Thin & light mobile workstations",
+            "Dell Precision 7000 Series - High-performance mobile workstations",
           ],
         },
         {
-          name: "HP Laptops",
+          name: "HP Commercial Laptops",
           items: [
-            "HP Spectre x360 - Premium convertible with style",
-            "HP EliteBook - Enterprise-class business laptops",
-            "HP ProBook - Reliable and affordable business solutions",
-            "HP ZBook - Mobile workstations for creative professionals",
+            "HP EliteBook 600 Series - Essential business laptops with security features",
+            "HP EliteBook 800 Series - Premium business laptops for professionals",
+            "HP EliteBook 1000 Series - Ultra-premium flagship business laptops",
+            "HP EliteBook x360 - Convertible business laptops with pen support",
+            "HP ProBook 400 Series - Reliable and affordable business solutions",
+            "HP ProBook 600 Series - Performance-driven business laptops",
+            "HP ZBook Firefly - Thin & light mobile workstations",
+            "HP ZBook Studio - High-performance mobile workstations for creators",
           ],
         },
         {
-          name: "Lenovo Laptops",
+          name: "Lenovo Commercial Laptops",
           items: [
-            "Lenovo ThinkPad - Legendary business laptops with TrackPoint",
-            "Lenovo IdeaPad - Consumer laptops for home and office",
-            "Lenovo Yoga - Flexible 2-in-1 convertible devices",
-            "Lenovo Legion - High-performance gaming laptops",
+            "Lenovo ThinkPad L Series - Essential business laptops with reliability",
+            "Lenovo ThinkPad T Series - Mainstream business laptops for professionals",
+            "Lenovo ThinkPad X Series - Ultra-portable premium business laptops",
+            "Lenovo ThinkPad X1 Carbon - Flagship ultralight business laptop",
+            "Lenovo ThinkPad X1 Yoga - Premium convertible with pen support",
+            "Lenovo ThinkPad P Series - Mobile workstations for demanding tasks",
+            "Lenovo ThinkPad E Series - Budget-friendly business laptops",
           ],
         },
+
         {
           name: "Apple MacBooks",
           items: [
@@ -110,31 +150,66 @@ export default function Products() {
       ),
 
       brands: [
+        // {
+        //   name: "Dell Desktops",
+        //   items: [
+        //     "Dell OptiPlex - Reliable business desktops for enterprise",
+        //     "Dell Precision - Professional workstations for demanding tasks",
+        //     "Dell Inspiron Desktop - All-in-one and tower solutions",
+        //     "Dell Vostro - Small business focused desktop systems",
+        //   ],
+        // },
+        // {
+        //   name: "HP Desktops",
+        //   items: [
+        //     "HP EliteDesk - Premium business desktop computers",
+        //     "HP ProDesk - Efficient and secure business PCs",
+        //     "HP Z Workstation - Professional workstations for creators",
+        //     "HP All-in-One - Space-saving desktop solutions",
+        //   ],
+        // },
+        // {
+        //   name: "Lenovo Desktops",
+        //   items: [
+        //     "Lenovo ThinkCentre - Business desktops with reliability",
+        //     "Lenovo ThinkStation - Powerful workstations for professionals",
+        //     "Lenovo IdeaCentre - Consumer desktop towers and AIOs",
+        //     "Lenovo Legion Tower - Gaming desktops with high performance",
+        //   ],
+        // },
         {
-          name: "Dell Desktops",
+          name: "Dell Commercial Desktops",
           items: [
-            "Dell OptiPlex - Reliable business desktops for enterprise",
-            "Dell Precision - Professional workstations for demanding tasks",
-            "Dell Inspiron Desktop - All-in-one and tower solutions",
-            "Dell Vostro - Small business focused desktop systems",
+            "Dell OptiPlex Micro - Ultra-compact desktops for space-constrained environments",
+            "Dell OptiPlex Small Form Factor - Balanced performance and size",
+            "Dell OptiPlex Tower - Full-featured business desktop towers",
+            "Dell OptiPlex All-in-One - Sleek all-in-one business desktops",
+            "Dell Precision 3000 Series - Entry-level fixed workstations",
+            "Dell Precision 5000 Series - Compact tower workstations",
+            "Dell Precision 7000 Series - High-performance tower workstations",
           ],
         },
         {
-          name: "HP Desktops",
+          name: "HP Commercial Desktops",
           items: [
-            "HP EliteDesk - Premium business desktop computers",
-            "HP ProDesk - Efficient and secure business PCs",
-            "HP Z Workstation - Professional workstations for creators",
-            "HP All-in-One - Space-saving desktop solutions",
+            "HP EliteDesk 600 Series - Essential business desktop PCs",
+            "HP EliteDesk 800 Series - Premium business desktops with security",
+            "HP EliteOne All-in-One - Stylish all-in-one business PCs",
+            "HP ProDesk 400 Series - Affordable and reliable business desktops",
+            "HP ProDesk 600 Series - Performance-driven business PCs",
+            "HP Z2 Workstation - Entry-level professional workstations",
+            "HP Z4/Z6/Z8 Workstation - High-end workstations for demanding workflows",
           ],
         },
         {
-          name: "Lenovo Desktops",
+          name: "Lenovo Commercial Desktops",
           items: [
-            "Lenovo ThinkCentre - Business desktops with reliability",
-            "Lenovo ThinkStation - Powerful workstations for professionals",
-            "Lenovo IdeaCentre - Consumer desktop towers and AIOs",
-            "Lenovo Legion Tower - Gaming desktops with high performance",
+            "Lenovo ThinkCentre M Series Tiny - Ultra-small form factor desktops",
+            "Lenovo ThinkCentre M Series SFF - Small form factor business PCs",
+            "Lenovo ThinkCentre M Series Tower - Full-size business desktop towers",
+            "Lenovo ThinkCentre Neo - Next-gen commercial desktops",
+            "Lenovo ThinkStation P Series - Professional workstations",
+            "Lenovo ThinkCentre All-in-One - Space-saving business AIOs",
           ],
         },
         {
@@ -264,8 +339,8 @@ export default function Products() {
                 <h2
                   className="text-xl md:text-[30px] font-bold text-slate-800 cursor-pointer"
                   onClick={() => {
-                    setSelectedProduct(section);
-                    setOpenModal(true);
+                    // setSelectedProduct(section.title);
+                    // setOpenModal(true);
                   }}
                 >
                   {section.title}
@@ -279,7 +354,7 @@ export default function Products() {
                     key={brand.name}
                     className="cursor-pointer"
                     onClick={() => {
-                      setSelectedProduct(section);
+                      setSelectedProduct(brand.name);
                       setOpenModal(true);
                     }}
                   >
@@ -323,7 +398,7 @@ export default function Products() {
         <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50">
           <div className="bg-white rounded-xl w-full md:max-w-lg relative shadow-lg">
             <Form
-              productTitle={selectedProduct}
+              p_Title={selectedProduct}
               onClose={() => setOpenModal(false)}
               showClose={true}
             />
