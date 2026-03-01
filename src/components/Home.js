@@ -112,7 +112,7 @@ export default function Home() {
           </h1>
 
           {/* Line 2 */}
-          <h1 className="text-4xl md:text-9xl font-extrabold text-blue-400 leading-tight animate-slide-right [animation-delay:0.3s]">
+          <h1 className="text-4xl md:text-9xl font-extrabold leading-tight animate-slide-right [animation-delay:0.3s]">
             Revolutionary
           </h1>
 
