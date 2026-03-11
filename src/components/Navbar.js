@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation(); // <- Detect current route
 
-  const links = ["Home", "Services", "Products", "About", "Contact"];
+  const links = ["Home", "About", "Products", "Services", "Contact"];
 
   return (
     <nav className="bg-gray-700 text-white sticky top-0 z-50 shadow-md ">
@@ -13,7 +13,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/">
           <div className="flex   justify-center ">
-            <p className="text-2xl mr-2  text-center content-center font-bold">
+            <p className="text-blue-400 text-2xl mr-2  text-center content-center font-bold">
               VH'S
             </p>
             <p className=" text-xl  text-center content-center  text-blue-400 ">

@@ -36,9 +36,9 @@ export default function AboutUs() {
           <p className="text-gray-700 mb-4 small-text text-justify">
             We have a team of specialized people in IT solutions and sales,
             offering a comprehensive range of products and services from
-            industry leading OEMs right from structure cabling to cloud. Our
-            team is dedicated in providing cutting-edge technology solutions to
-            meet up client’s unique business needs.
+            industry leading OEMs. Our team is dedicated in providing
+            cutting-edge technology solutions to meet up client’s unique
+            business needs.
           </p>
           <p className="text-gray-700 small-text text-justify">
             Our core competency lies in crafting and designing customized

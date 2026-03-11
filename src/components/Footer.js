@@ -11,7 +11,8 @@ export default function Footer() {
      px-2 md:px-4"
       >
         <p>
-          &copy; {new Date().getFullYear()} Vh'sTechSphere. All rights reserved.
+          &copy; {new Date().getFullYear()} VH'S TechSphere. All rights
+          reserved.
         </p>
 
         <p>
