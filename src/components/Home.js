@@ -186,9 +186,9 @@ export default function Home() {
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h2 className="text-3xl font-bold mb-4">Enterprise Computing</h2>
             <p className="text-gray-700 small-text">
-              We offer sales, installation, and maintenance services for
-              laptops, desktops, and servers, delivering reliable computing
-              solutions tailored to meet the needs of modern businesses.
+              We offer sales, installation and maintenance services for laptops,
+              desktops, and servers delivering reliable computing solutions
+              tailored to meet the needs of modern businesses.
             </p>
           </div>
           <div className="md:w-1/2">
