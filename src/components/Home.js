@@ -16,7 +16,7 @@ import { useState } from "react";
 const featuredProducts = [
   {
     name: "High-Performance Desktop",
-    description: "Powerful desktops for gaming and enterprise.",
+    description: "Powerful desktops for enterprise.",
     img: computer,
   },
   {
