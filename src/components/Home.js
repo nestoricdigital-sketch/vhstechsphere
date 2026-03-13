@@ -35,7 +35,7 @@ const services = [
   {
     title: "Desktop and End-User Support",
     description:
-      "Expert support for desktops and end-users, resolving issues promptly for efficient productivity.",
+      "Providing expert support for installing, configuring, maintaining and troubleshooting desktop and laptop systems, software and peripherals to ensure smooth and efficient end-user operations",
   },
   {
     title: "End-to-End User Support",
